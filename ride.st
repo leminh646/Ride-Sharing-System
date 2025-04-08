@@ -137,7 +137,7 @@ lf := Character codePoint: 10.
 
 "Create some rides"
 ride1 := StandardRide newWithID: 'R001' pickup: 'A' dropoff: 'B' distance: 10.
-ride2 := PremiumRide newWithID: 'R002' pickup: 'c' dropoff: 'D' distance: 8.5.
+ride2 := PremiumRide newWithID: 'R002' pickup: 'C' dropoff: 'D' distance: 8.5.
 
 "Create a driver"
 driver := Driver newWithID: 'D001' name: 'Amber' rating: 4.8.
@@ -157,10 +157,12 @@ Transcript cr.
 Transcript show: ride1 summaryString, lf.
 Transcript cr.
 Transcript show: ride2 summaryString, lf, lf.
+Transcript cr.
 
 Transcript show: 'Driver Info:', lf.
 Transcript cr.
 Transcript show: driver infoString, lf.
+Transcript cr.
 
 Transcript show: 'Rider Info:', lf.
 Transcript cr.
